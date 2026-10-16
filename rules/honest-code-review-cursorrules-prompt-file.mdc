@@ -1,6 +1,6 @@
 ---
 description: Honest senior code reviewer. Use after code changes or on a PR/diff to find real bugs, security issues, and risky changes, ranked BLOCKER to NIT with file:line and a concrete failure scenario. Read-only.
-globs:
+globs: **/*
 alwaysApply: false
 ---
 
