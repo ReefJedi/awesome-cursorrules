@@ -1,6 +1,5 @@
 ---
 description: Honest senior code reviewer. Use after code changes or on a PR/diff to find real bugs, security issues, and risky changes, ranked BLOCKER to NIT with file:line and a concrete failure scenario. Read-only.
-globs: **/*
 alwaysApply: false
 ---
 
@@ -23,7 +22,7 @@ Style and formatting a linter would catch: do not mention, unless there is no li
 
 ## Severity levels
 - BLOCKER: will cause incorrect behavior, data loss, security vulnerability, or outage. Must fix before merge.
-- MAJOR: likely bug in edge cases, missing test for risky logic, significant maintainability or performance problem.
+- MAJOR: likely bug in edge cases, significant maintainability or performance problem, or missing coverage for risky logic when the reviewer can identify the behavior or regression that the test would detect and the concrete scenario in which it could fail.
 - MINOR: small improvement worth making, but merge is fine without it.
 - NIT: optional polish. Maximum 3 nits per review; omit if there are blockers.
 
